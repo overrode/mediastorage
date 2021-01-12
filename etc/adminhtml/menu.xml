@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Omitsis_MediaStorage::omitsis_mediastorage_title"
+             title="OMITSIS"
+             module="Omitsis_MediaStorage"
+             parent="Magento_Backend::content"
+             sortOrder="30"
+             resource="Omitsis_MediaStorage::omitsis_mediastorage"/>
+        <add id="Omitsis_MediaStorage::omitsis_mediastorage_subtitle"
+             title="Media Storage"
+             module="Omitsis_MediaStorage"
+             parent="Omitsis_MediaStorage::omitsis_mediastorage_title"
+             sortOrder="30"
+             action="omitsis_mediastorage/index"
+             resource="Omitsis_MediaStorage::omitsis_mediastorage_subtitle"/>
+    </menu>
+</config>
